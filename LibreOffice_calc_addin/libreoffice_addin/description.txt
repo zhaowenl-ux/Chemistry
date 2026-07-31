@@ -1,0 +1,7 @@
+Chemistry Tools for Calc
+
+Adds a "Chemistry" menu and toolbar to LibreOffice Calc with four tools for
+working with SD files (SDF): Load SDF, Save SDF, Salt Stripping, and Add
+Column (nine RDKit descriptors). Chemistry is computed by RDKit, run via a
+separate Python interpreter that you point the extension at once during
+setup -- see README.md in the add-in folder.

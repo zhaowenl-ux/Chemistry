@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<oor:component-data oor:name="Addons" oor:package="org.openoffice.Office"
+    xmlns:oor="http://openoffice.org/2001/registry"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <node oor:name="AddonUI">
+
+    <node oor:name="OfficeMenuBar">
+      <node oor:name="com.actithera.chemistrycalc.menu" oor:op="replace">
+        <prop oor:name="Context" oor:type="xs:string">
+          <value>com.sun.star.sheet.SpreadsheetDocument</value>
+        </prop>
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Chemistry</value>
+        </prop>
+        <prop oor:name="Target" oor:type="xs:string">
+          <value>_self</value>
+        </prop>
+        <node oor:name="Submenu">
+
+          <node oor:name="m01" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$load_sdf?language=Python&amp;location=user:uno_packages</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en-US">Load SDF...</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+          </node>
+
+          <node oor:name="m02" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$save_sdf?language=Python&amp;location=user:uno_packages</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en-US">Save SDF...</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+          </node>
+
+          <node oor:name="m03" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$strip_salts?language=Python&amp;location=user:uno_packages</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en-US">Salt Stripping</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+          </node>
+
+          <node oor:name="m04" oor:op="replace">
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en-US">Add Column</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+            <node oor:name="Submenu">
+
+              <node oor:name="a01" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_molwt?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">MolWt</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a02" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_logp?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">LogP</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a03" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_tpsa?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">TPSA</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a04" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_hbd?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">HBD</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a05" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_hba?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">HBA</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a06" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_numrings?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">NumRings</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a07" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_rotatablebonds?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">RotatableBonds</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a08" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_heavyatomcount?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">HeavyAtomCount</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+              <node oor:name="a09" oor:op="replace">
+                <prop oor:name="URL" oor:type="xs:string">
+                  <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$add_column_fractioncsp3?language=Python&amp;location=user:uno_packages</value>
+                </prop>
+                <prop oor:name="Title" oor:type="xs:string">
+                  <value xml:lang="en-US">FractionCSP3</value>
+                </prop>
+                <prop oor:name="Target" oor:type="xs:string">
+                  <value>_self</value>
+                </prop>
+              </node>
+
+            </node>
+          </node>
+
+          <node oor:name="m06" oor:op="replace">
+            <prop oor:name="URL" oor:type="xs:string">
+              <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$show_about?language=Python&amp;location=user:uno_packages</value>
+            </prop>
+            <prop oor:name="Title" oor:type="xs:string">
+              <value xml:lang="en-US">About Chemistry Tools...</value>
+            </prop>
+            <prop oor:name="Target" oor:type="xs:string">
+              <value>_self</value>
+            </prop>
+          </node>
+
+        </node>
+      </node>
+    </node>
+
+    <node oor:name="OfficeToolBar">
+      <node oor:name="com.actithera.chemistrycalc.toolbar" oor:op="replace">
+        <prop oor:name="Title" oor:type="xs:string">
+          <value xml:lang="en-US">Chemistry</value>
+        </prop>
+        <prop oor:name="Context" oor:type="xs:string">
+          <value>com.sun.star.sheet.SpreadsheetDocument</value>
+        </prop>
+
+        <node oor:name="t01" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string">
+            <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$load_sdf?language=Python&amp;location=user:uno_packages</value>
+          </prop>
+          <prop oor:name="Title" oor:type="xs:string">
+            <value xml:lang="en-US">Load SDF</value>
+          </prop>
+          <prop oor:name="Target" oor:type="xs:string">
+            <value>_self</value>
+          </prop>
+        </node>
+
+        <node oor:name="t02" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string">
+            <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$save_sdf?language=Python&amp;location=user:uno_packages</value>
+          </prop>
+          <prop oor:name="Title" oor:type="xs:string">
+            <value xml:lang="en-US">Save SDF</value>
+          </prop>
+          <prop oor:name="Target" oor:type="xs:string">
+            <value>_self</value>
+          </prop>
+        </node>
+
+        <node oor:name="t03" oor:op="replace">
+          <prop oor:name="URL" oor:type="xs:string">
+            <value>vnd.sun.star.script:ChemistryCalcAddin.oxt|python|chemistry_calc.py$strip_salts?language=Python&amp;location=user:uno_packages</value>
+          </prop>
+          <prop oor:name="Title" oor:type="xs:string">
+            <value xml:lang="en-US">Salt Stripping</value>
+          </prop>
+          <prop oor:name="Target" oor:type="xs:string">
+            <value>_self</value>
+          </prop>
+        </node>
+
+      </node>
+    </node>
+
+  </node>
+</oor:component-data>
